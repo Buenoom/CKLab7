@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основная информация</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">Основная информация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="films.html">Список фильмов</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="sidebar">
+        <nav
+          class="bg-dark text-light position-fixed"
+          style="height: 100%; width: 10%"
+        >
+          <div class="sidebar-content">
+            <h3>Меню</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#carousel">Карусель</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#films">Карточки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#biography">Информация</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="1.jpg"
+                alt="ChristianBale_1"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="2.jpg"
+                alt="ChristianBale_2"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="3.jpg"
+                alt="ChristianBale_3"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <br />
+
+        <div id="films" class="film-cards">
+          <div class="card bg-light" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="prestige.jpg"
+              alt="Престиж"
+              style="width: 400px"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Престиж</h3>
+              <p class="card-text">
+                Роберт и Альфред - фокусники-иллюзионисты, которые на рубеже XIX
+                и XX веков соперничали друг с другом в Лондоне. С годами их
+                дружеская конкуренция на профессиональной почве перерастает в
+                настоящую войну. Они готовы на все, чтобы выведать друг у друга
+                секреты фантастических трюков и сорвать их исполнение.
+                Непримиримая вражда, вспыхнувшая между ними, начинает угрожать
+                жизни окружающих их людей…
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://www.kinopoisk.ru/film/195334/"
+                >Кинопоиск</a
+              >
+            </div>
+          </div>
+
+          <div class="card bg-light" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="ford_v_ferrari.jpg"
+              alt="Ford против Ferrari"
+              style="width: 400px"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Ford против Ferrari</h3>
+              <p class="card-text">
+                В начале 1960-х Генри Форд II принимает решение улучшить имидж
+                компании и сменить курс на производство более модных
+                автомобилей. После неудавшейся попытки купить практически
+                банкрота Ferrari американцы решают бросить вызов итальянским
+                конкурентам на трассе и выиграть престижную гонку 24 часа
+                Ле-Мана. Чтобы создать подходящую машину, компания нанимает
+                автоконструктора Кэррола Шэлби, а тот отказывается работать без
+                выдающегося, но, как считается, трудного в общении гонщика Кена
+                Майлза. Вместе они принимаются за разработку впоследствии
+                знаменитого спорткара Ford GT40.
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://www.kinopoisk.ru/film/835086/"
+                >Кинопоиск</a
+              >
+            </div>
+          </div>
+
+          <div class="card bg-light" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="the_dark_knight.jpg"
+              alt="Тёмный рыцарь"
+              style="width: 400px"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Тёмный рыцарь</h3>
+              <p class="card-text">
+                Бэтмен поднимает ставки в войне с криминалом. С помощью
+                лейтенанта Джима Гордона и прокурора Харви Дента он намерен
+                очистить улицы Готэма от преступности. Сотрудничество
+                оказывается эффективным, но скоро они обнаружат себя посреди
+                хаоса, развязанного восходящим криминальным гением, известным
+                напуганным горожанам под именем Джокер.
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://www.kinopoisk.ru/film/111543/"
+                >Кинопоиск</a
+              >
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="container-bio">
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            data-bs-target="#biography"
+          >
+            Об актере
+          </button>
+
+          <div id="biography" class="collapse biography">
+            <h3>Где родился</h3>
+            <p>
+              Кристиан Чарльз Филип Бейл появился на свет 30 января 1974 года в
+              Хаверфордуэсте, графство Пембрукшир, в семье англичан — цирковой
+              артистки Дженни Джеймс и предпринимателя и активиста Дэвида Бейла.
+              «Я родился в Уэльсе, но я не валлиец — я англичанин», — отмечал
+              Бейл.
+            </p>
+            <h3>Где учился</h3>
+            <p>
+              Кристиан Бейл учился в нескольких местах, но его основное
+              образование связано с театром. Он начал свою карьеру в актерстве в
+              раннем возрасте и не имел формального театрального образования.
+              Вместо этого он получил опыт через участие в различных театральных
+              постановках и фильмах. В подростковом возрасте он также учился в
+              школе для актеров в Лондоне.
+            </p>
+            <h3>Личная жизнь</h3>
+            <p>
+              С 1990-х годов Бейл проживает в Лос-Анджелесе. Он имеет
+              гражданство США. 29 января 2000 года Бейл женился на бывшей
+              американской модели сербского происхождения Сандре «Сиби» Блажич в
+              Лас-Вегасе. У пары есть дочь и сын. В 2000 году Бейл стал пасынком
+              феминистки Глории Стайнем после того, как она вышла замуж за его
+              отца, который умер в 2003 году от мозговой лимфомы. В семь лет
+              Бейл стал вегетарианцем, но в 2009 году он полностью отошёл от
+              вегетарианства. Он перестал есть красное мясо после того, как
+              прочитал детскую книгу «Паутина Шарлотты». Бейл является
+              активистом по защите прав животных и поддерживает организации
+              «Гринпис», Всемирный фонд охраны природы, Международный фонд
+              защиты горилл Дайан Фосси и конный заповедник Редвингс.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
